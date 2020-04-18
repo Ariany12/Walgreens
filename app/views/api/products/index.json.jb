@@ -3,7 +3,9 @@
   id: product.id,
   name: product.name,
   price: product.price,
+  tax: product.tax,
+  total: product.total,
   specificity: product.specificity,
-  quantity: product.quantity
+  quantity_in_stock: product.quantity
   }
 end

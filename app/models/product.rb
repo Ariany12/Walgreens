@@ -1,10 +1,10 @@
 class Product < ApplicationRecord
   def tax
-    t = 0.01
-    t = price * t
+    tax = 0.01
+    tax = price * tax
   end
 
   def total
-    price + T
+    price +  tax
   end
 end

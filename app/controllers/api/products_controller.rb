@@ -34,7 +34,7 @@ class Api::ProductsController < ApplicationController
     if @product.save
       render json: {message: "You product was update"}
     else
-       render json: {errors: @product.errors.full_messages, status: :unprocessable_entity}
+      render json: {errors: @product.errors.full_messages}, status: :unprocessable_entity
     end
   end 
 
@@ -43,7 +43,7 @@ class Api::ProductsController < ApplicationController
     if @product.delete
       render json: {message: "You product was deleted"}
     else
-      render json: {errors: @product.errors.full_messages, status: :unprocessable_entity}
+      render json: {errors: @product.errors.full_messages}, status: :unprocessable_entity
     end 
   end
 end
